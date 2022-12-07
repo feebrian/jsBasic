@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Expression</title>
+  </head>
+  <body>
+    <p id="teks"></p>
+    <p id="teks1"></p>
+
+    <script>
+      // JS expressions = combination from value, variable, and operators which computes to value
+      // the computation is called evaluation
+      // expressions can contain variable too
+      // bcz JS is dynamic language the value from a variable can be various types such as string, number, boolean etc.
+
+      // e.g
+
+      document.getElementById("teks").innerHTML = 5 * 10; // this means that 5 * 10 evaluate to 50
+
+      let x = 50;
+      document.getElementById("teks1").innerHTML = x + 50; // this means that x + 50 evaluate to 100
+
+      let firstName = "Adam";
+      let lastName = "Aditama";
+      document.writeln("My Name is : " + firstName + " " + lastName); // evaluate the string to "My Name is : Adam Aditama"
+    </script>
+  </body>
+</html>

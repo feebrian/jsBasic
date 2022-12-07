@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Where To</title>
+
+    <!-- JS script in head tag -->
+    <script>
+      function toggleTeks() {
+        document.getElementById("teks2").innerHTML = "Halo lagi";
+      }
+    </script>
+  </head>
+  <body>
+    <p id="teks"></p>
+    <p id="teks2"></p>
+    <p id="teks3"></p>
+
+    <button type="button" onclick="toggleTeks()">Ubah teks2</button>
+    <button type="button" onclick="toggleTeks3()">Ubah teks3</button>
+
+    <!-- JS script in the bottom of body tag(recommended) -->
+    <script>
+      document.getElementById("teks").innerHTML = "Hello World";
+    </script>
+
+    <!-- Using External JS(practice when using same function is calles in many file) -->
+    <script src="assets/js/externalJs.js"></script>
+  </body>
+</html>

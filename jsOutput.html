@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Output</title>
+  </head>
+  <body>
+    <p id="teks1"></p>
+
+    <!-- memanggil document.write(); setelah html selesai diload maka akan meng"overwrite" seluruh dokumen html -->
+    <button type="button" onclick="document.writeln(5+6)">Coba Aja</button>
+
+    <button type="button" onclick="window.print()">Print halaman ini</button>
+
+    <script>
+      // innerHTML
+      document.getElementById("teks1").innerHTML = 1 + 1;
+
+      // document.write(); biasa digunakan untuk testing saja dan diperuntukkan hanya untuk testing saja
+      document.writeln("<p>Hello ini adalah document.write</p>");
+
+      // window.alert
+      window.alert("Ini alert popup");
+
+      // console.log(); biasa digunakan untuk debugging
+      console.log("Ini console.log");
+    </script>
+  </body>
+</html>

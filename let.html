@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>let keyword</title>
+  </head>
+  <body>
+    <script>
+      // // dont re-declare variable that defineed with let on the same block scope
+
+      // let nama = "Adam";
+      // let nama = "Adam";
+
+      let x = 10;
+      let y = 5;
+      console.log(x, y);
+
+      // block code
+      {
+        let x = 5;
+        let y = 10;
+
+        console.log(x, y);
+      }
+
+      console.log(x, y);
+
+      let name = "anjeer";
+      name = "Adam";
+
+      console.log(name);
+
+      // var
+
+      var z = 10;
+
+      {
+        var z = 5;
+      }
+
+      console.log(z);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Const</title>
+  </head>
+  <body>
+    <script>
+      let nama = "Adam";
+      nama = "Rafka";
+
+      console.log(nama);
+
+      const phi = 3.14;
+      console.log(phi);
+
+      // const umur;
+      // umur = 12;
+      // console.log(umur);
+
+      // constant array
+      const car = ["Avanza", "BMW", "Rush"];
+      // change the array element
+      car.push("Supra");
+
+      car[0] = "Pajero";
+
+      console.log(car);
+
+      // constant object
+      const fruit = { Taste: "Sweet", Name: "Mango", Owner: "Adam" };
+      // fruit = { Taste: "Salty", Name: "Tomato", Owner: "Rafka" }; ERROR
+
+      console.log(fruit);
+
+      // const block scope
+      const a = 10;
+
+      {
+        const a = 20;
+        console.log(a);
+      }
+
+      console.log(a);
+
+      // const hoisting
+      console.log(d);
+      const d = 10;
+    </script>
+  </body>
+</html>

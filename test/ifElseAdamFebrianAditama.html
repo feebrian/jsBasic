@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Else</title>
+  </head>
+  <body>
+    <script>
+      // Simple login using if else in JS
+      let username, password, passConvert;
+
+      do {
+        username = prompt("Masukkan Username : ");
+        password = prompt("Masukkan Password : ");
+
+        passConvert = parseInt(password);
+
+        if (username === "Adam" && passConvert === 123) {
+          alert("Berhasil Login"); // Popup berhasil login
+          // switch case
+          let lampu = "";
+
+          switch (lampu) {
+            case "merah":
+              document.writeln("Sekarang Lampu Merah, Tolong Berhenti.");
+              break;
+            case "kuning":
+              document.writeln("Sekarang Lampu Kuning, Harap Berhati - Hati.");
+              break;
+            case "hijau":
+              document.writeln("Sekarang Lampu Hijau, Selamat Jalan.");
+              break;
+
+            default:
+              document.writeln(undefined);
+          }
+        } else {
+          alert("Login Gagal");
+          var ulang = confirm("Anda mau mengulang login lagi?(Y/N)");
+        }
+      } while (ulang === true);
+    </script>
+  </body>
+</html>
