@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(Boolean(10 > 5));
+
+      // everything that has "value" is true
+      console.log(Boolean(123));
+      console.log(Boolean(123));
+      console.log(Boolean("ASDF"));
+      console.log(Boolean(false));
+      console.log(Boolean("false"));
+
+      // everything that without "value" is false
+      console.log(Boolean(""));
+      console.log(Boolean(0));
+      console.log(Boolean(undefined));
+      console.log(Boolean(null));
+      console.log(Boolean(NaN));
+      console.log(Boolean(false));
+
+      // Boolean be a object by using new keyword
+      let x = new Boolean(true);
+      let y = new Boolean(true);
+      console.log(x == y);
+    </script>
+  </body>
+</html>
