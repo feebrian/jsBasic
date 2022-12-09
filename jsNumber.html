@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <p id="teks"></p>
   <script>
 
     // There is only one type number in JS 
@@ -27,6 +28,37 @@
 
     // Number w/o period or e notation is up to 15 digit
     console.log(x = 9999999999999999);
+
+    // Actually string is have numeric it also mean that js string can use aritmath operator except "+"
+
+    x = "100";
+    y = "20";
+    let z = x - y;
+    console.log(z);
+
+    z = x / y;
+    console.log(z);
+
+    z = x * y;
+    console.log(z);
+
+    z = x + y;
+    console.log(z); // This will concatenate x and y and evaluate to 10020
+
+    // Infinity
+    x = 2;
+    let txt = "";
+
+    while (x != Infinity) {
+      x = x * x;
+      txt = txt + x + "</br>";
+    }
+
+    document.getElementById('teks').innerHTML = txt;
+
+    x = 2 / 0;
+    y = -2 / 0;
+    console.log(x, y);
 
   </script>
 </body>
